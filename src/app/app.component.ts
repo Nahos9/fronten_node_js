@@ -22,11 +22,13 @@ export class AppComponent implements OnInit {
    this.formSing = this.fb.group({
     email : ["",Validators.required],
     password : ["",Validators.required],
-    passConfirme : [""]
+    role_id:["",[Validators.required]]
    })
   }
 
   signup(){
+    //console.log(this.formSing.value.role_id)
+    //const data = {...this.formSing.value}
     this.authService.signup(this.formSing.value)
     .subscribe({
       next : data => {

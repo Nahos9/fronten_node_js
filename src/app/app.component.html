@@ -9,8 +9,15 @@
         <input type="password" class="form-control" placeholder="Entrez votre mot de passe" formControlName="password">
       </div>
       <div class="mb-3">
-        <input type="password" class="form-control" placeholder="Entrez à nouveau votre mot de passe" formControlName="passConfirme">
+        <select name="" id="" formControlName="role_id" class="form-control">
+          <option value="">--CHOISEZ UN ROLE</option>
+          <option value="1">USER</option>
+          <option value="2">ADMIN</option>
+        </select>
       </div>
+      <!-- <div class="mb-3">
+        <input type="password" class="form-control" placeholder="Entrez à nouveau votre mot de passe" formControlName="passConfirme">
+      </div> -->
       <div class="mt-3 d-flex justify-content-end">
         <button class="btn btn-success" >
           S'inscrire
